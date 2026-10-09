@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKAYAMIN JOGJA - Ikatan Alumni Ponpes Al-Mukhlishin Yogyakarta</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans & Serif Accent -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        arabic: ['Amiri', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        },
+                        amber: {
+                            400: '#fbbf24',
+                            50: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        .islamic-pattern {
+            background-color: #075985;
+            background-image: radial-gradient(#38bdf8 0.75px, transparent 0.75px), radial-gradient(#38bdf8 0.75px, #075985 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0,15px 15px;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #0284c7;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 custom-scrollbar antialiased selection:bg-sky-500 selection:text-white">
+
+    <nav class="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-sky-100 shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo & Brand Name -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <!-- SVG Logo Official Precise Replica -->
+                    <div class="w-12 h-12 shrink-0 group-hover:scale-105 transition-transform duration-300">
+                        <svg viewBox="0 0 400 400" class="w-full h-full drop-shadow-md">
+                            <defs>
+                                <linearGradient id="navShieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#0284c7"/>
+                                    <stop offset="100%" stop-color="#075985"/>
+                                </linearGradient>
+                                <linearGradient id="navGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#fef08a"/>
+                                    <stop offset="50%" stop-color="#facc15"/>
+                                    <stop offset="100%" stop-color="#eab308"/>
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Outer Dark Ring Frame -->
+                            <circle cx="200" cy="200" r="192" fill="#0f172a" stroke="#ffffff" stroke-width="4"/>
+                            <circle cx="200" cy="200" r="148" fill="#ffffff" stroke="#38bdf8" stroke-width="2.5"/>
+                            
+                            <!-- Circular Text Path Top -->
+                            <path id="textPathTopNav" d="M 48,200 A 152,152 0 1,1 352,200" fill="none"/>
+                            <text font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="20" fill="#38bdf8" letter-spacing="2.5">
+                                <textPath href="#textPathTopNav" startOffset="50%" text-anchor="middle">
+                                    IKATAN YAYASAN AL-MUKHLISHIN SIBUHUAN
+                                </textPath>
+                            </text>
+                            
+                            <!-- Circular Text Path Bottom -->
+                            <path id="textPathBottomNav" d="M 352,200 A 152,152 0 0,1 48,200" fill="none"/>
+                            <text font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="20.5" fill="#38bdf8" letter-spacing="2.8">
+                                <textPath href="#textPathBottomNav" startOffset="50%" text-anchor="middle">
+                                    IKAYAMIN-YOGYAKARTA
+                                </textPath>
+                            </text>
+                            
+                            <!-- Inner Shield Container -->
+                            <g transform="translate(0, 0)">
+                                <!-- Blue Shield Background -->
+                                <path d="M 115,108 C 115,108 200,80 285,108 L 285,225 C 285,295 200,328 200,328 C 200,328 115,295 115,225 Z" fill="url(#navShieldGrad)" stroke="#facc15" stroke-width="4"/>
+                                
+                                <!-- Top Star -->
+                                <polygon points="200,90 203.5,100 214,100 205.5,106 208.5,116 200,110 191.5,116 194.5,106 186,100 196.5,100" fill="url(#navGoldGrad)" stroke="#000000" stroke-width="0.8"/>
+                                
+                                <!-- Open Quran Book -->
+                                <g transform="translate(172, 118)">
+                                    <path d="M 28,3 Q 14,8 0,14 L 0,28 Q 14,22 28,17 Z" fill="#ffffff" stroke="#0f172a" stroke-width="2.2"/>
+                                    <path d="M 28,3 Q 42,8 56,14 L 56,28 Q 42,22 28,17 Z" fill="#ffffff" stroke="#0f172a" stroke-width="2.2"/>
+                                    <line x1="28" y1="3" x2="28" y2="17" stroke="#0f172a" stroke-width="2.2"/>
+                                </g>
+                                
+                                <!-- Center Yellow Monogram Circle -->
+                                <circle cx="200" cy="188" r="31" fill="url(#navGoldGrad)" stroke="#0f172a" stroke-width="3"/>
+                                <text x="200" y="195" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="18" fill="#0f172a" text-anchor="middle">YAM</text>
+                                
+                                <!-- 10 Golden Stars surrounding circle -->
+                                <g fill="url(#navGoldGrad)" stroke="#000000" stroke-width="0.6">
+                                    <polygon points="152,188 154,182 160,182 155,186 157,192 152,188 147,192 149,186 144,182 150,182" transform="scale(0.7) translate(65, 80)"/>
+                                    <polygon points="158,165 160,159 166,159 161,163 163,169 158,165 153,169 155,163 150,159 156,159" transform="scale(0.7) translate(80, 50)"/>
+                                    <polygon points="180,150 182,144 188,144 183,148 185,154 180,150 175,154 177,148 172,144 178,144" transform="scale(0.7) translate(110, 30)"/>
+                                    <polygon points="220,150 222,144 228,144 223,148 225,154 220,150 215,154 217,148 212,144 218,144" transform="scale(0.7) translate(170, 30)"/>
+                                    <polygon points="242,165 244,159 250,159 245,163 247,169 242,165 237,169 239,163 234,159 240,159" transform="scale(0.7) translate(200, 50)"/>
+                                    <polygon points="248,190 250,184 256,184 251,188 253,194 248,190 243,194 245,188 240,184 246,184" transform="scale(0.7) translate(210, 85)"/>
+                                    <polygon points="240,215 242,209 248,209 243,213 245,219 240,215 235,219 237,213 232,209 238,209" transform="scale(0.7) translate(200, 120)"/>
+                                    <polygon points="220,230 222,224 228,224 223,228 225,234 220,230 215,234 217,228 212,224 218,224" transform="scale(0.7) translate(170, 140)"/>
+                                    <polygon points="180,230 182,224 188,224 183,228 185,234 180,230 175,234 177,228 172,224 178,224" transform="scale(0.7) translate(110, 140)"/>
+                                    <polygon points="160,215 162,209 168,209 163,213 165,219 160,215 155,219 157,213 152,209 158,209" transform="scale(0.7) translate(80, 120)"/>
+                                </g>
+
+                                <!-- Left Cotton Bolls (White) -->
+                                <g fill="#ffffff" stroke="#0f172a" stroke-width="1.8">
+                                    <circle cx="145" cy="142" r="7.5"/><circle cx="136" cy="168" r="7.5"/><circle cx="136" cy="195" r="7.5"/><circle cx="145" cy="222" r="7.5"/>
+                                </g>
+
+                                <!-- Right Rice Ears (Golden) -->
+                                <g fill="url(#navGoldGrad)" stroke="#0f172a" stroke-width="1.5">
+                                    <ellipse cx="255" cy="142" rx="4.5" ry="8.5" transform="rotate(25 255 142)"/>
+                                    <ellipse cx="264" cy="168" rx="4.5" ry="8.5" transform="rotate(20 264 168)"/>
+                                    <ellipse cx="264" cy="195" rx="4.5" ry="8.5" transform="rotate(15 264 195)"/>
+                                    <ellipse cx="255" cy="222" rx="4.5" ry="8.5" transform="rotate(10 255 222)"/>
+                                </g>
+                                
+                                <!-- Ribbons Bottom -->
+                                <!-- Upper Red Ribbon -->
+                                <path d="M 122,238 L 278,238 L 268,264 L 132,264 Z" fill="#dc2626" stroke="#000000" stroke-width="2.5"/>
+                                <text x="200" y="256" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">YAYASAN</text>
+
+                                <!-- Lower White Ribbon -->
+                                <path d="M 136,262 L 264,262 L 254,284 L 146,284 Z" fill="#ffffff" stroke="#000000" stroke-width="2.2"/>
+                                <text x="200" y="278" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="10.5" fill="#dc2626" text-anchor="middle">AL-MUKHLISHIN</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-xl font-black tracking-tight text-slate-900 block leading-none">IKAYAMIN <span class="text-sky-600">JOGJA</span></span>
+                        </div>
+                        <span class="text-[10px] text-slate-500 font-bold tracking-wider uppercase block mt-1">Alumni Ponpes Al-Mukhlishin Sibuhuan</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <div class="hidden lg:flex items-center gap-7 font-semibold text-slate-600 text-sm">
+                    <a href="#beranda" class="hover:text-sky-600 transition-colors py-1">Beranda</a>
+                    <a href="#sejarah" class="hover:text-sky-600 transition-colors py-1">Sejarah</a>
+                    <a href="#filosofi" class="hover:text-sky-600 transition-colors py-1">Visi & Misi</a>
+                    <a href="#kegiatan" class="hover:text-sky-600 transition-colors py-1">Agenda & Kegiatan</a>
+                    <a href="#pengurus" class="hover:text-sky-600 transition-colors py-1">Pengurus</a>
+                    <a href="#kontak" class="hover:text-sky-600 transition-colors py-1">Kontak</a>
+                </div>
+
+                <!-- Action Button Desktop -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <button onclick="openJoinModal()" class="px-5 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold shadow-md shadow-sky-600/20 hover:shadow-lg transition-all text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-user-plus text-xs"></i> Pendataan Alumni
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden border-b border-sky-100 bg-white px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#beranda" class="mobile-link block py-2.5 px-3 rounded-xl text-slate-700 hover:bg-sky-50 hover:text-sky-700 font-semibold">Beranda</a>
+            <a href="#sejarah" class="mobile-link block py-2.5 px-3 rounded-xl text-slate-700 hover:bg-sky-50 hover:text-sky-700 font-semibold">Sejarah Pendirian</a>
+            <a href="#filosofi" class="mobile-link block py-2.5 px-3 rounded-xl text-slate-700 hover:bg-sky-50 hover:text-sky-700 font-semibold">Visi & Misi</a>
+            <a href="#kegiatan" class="mobile-link block py-2.5 px-3 rounded-xl text-slate-700 hover:bg-sky-50 hover:text-sky-700 font-semibold">Agenda & Kegiatan</a>
+            <a href="#pengurus" class="mobile-link block py-2.5 px-3 rounded-xl text-slate-700 hover:bg-sky-50 hover:text-sky-700 font-semibold">Struktur Pengurus</a>
+            <a href="#kontak" class="mobile-link block py-2.5 px-3 rounded-xl text-slate-700 hover:bg-sky-50 hover:text-sky-700 font-semibold">Kontak Sekretariat</a>
+            <div class="pt-2">
+                <button onclick="openJoinModal()" class="w-full py-3 rounded-xl bg-sky-600 text-white font-bold text-center shadow-md">
+                    <i class="fa-solid fa-user-plus mr-2"></i> Pendataan Alumni Rantau
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="relative overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-32 islamic-pattern text-white">
+        <!-- Overlay Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-sky-950/90 to-slate-950 pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-sky-400/30 text-amber-300 text-xs font-bold tracking-wide uppercase">
+                        <i class="fa-solid fa-shield-halved"></i> Ikatan Alumni Pondok Pesantren Yayasan Al-Mukhlishin
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                        Merawat Persaudaraan,<br class="hidden sm:inline"> Saling <span class="text-amber-400 underline decoration-sky-500">Marsitoguan</span> di Jogja
+                    </h1>
+                    
+                    <p class="text-sky-100 text-base sm:text-lg font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0 opacity-90">
+                        Wadah silaturahmi, keilmuan, dan kebersamaan santri alumni Pondok Pesantren Al-Mukhlishin Sibuhuan di Daerah Istimewa Yogyakarta.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="#kegiatan" class="px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold shadow-xl shadow-amber-500/20 hover:scale-[1.02] active:scale-95 transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calendar-days"></i> Lihat Agenda Kegiatan
+                        </a>
+                        <a href="#sejarah" class="px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold backdrop-blur-sm hover:scale-[1.02] active:scale-95 transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-book-open"></i> Baca Sejarah Pendirian
+                        </a>
+                    </div>
+
+                    <!-- Falsafah Pill Tag -->
+                    <div class="pt-6 flex flex-wrap justify-center lg:justify-start gap-3 text-xs font-medium text-sky-200">
+                        <span class="bg-slate-900/80 px-3 py-1.5 rounded-lg border border-sky-700/50"><i class="fa-solid fa-check text-amber-400 mr-1.5"></i>Menjaga Silaturahmi</span>
+                        <span class="bg-slate-900/80 px-3 py-1.5 rounded-lg border border-sky-700/50"><i class="fa-solid fa-check text-amber-400 mr-1.5"></i>Merawat Persaudaraan</span>
+                        <span class="bg-slate-900/80 px-3 py-1.5 rounded-lg border border-sky-700/50"><i class="fa-solid fa-check text-amber-400 mr-1.5"></i>Menguatkan Almamater</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-amber-400/30 bg-gradient-to-b from-sky-900 via-slate-900 to-slate-950 p-8 text-center flex flex-col items-center justify-center group">
+                            
+                            <!-- Large Emblem Render -->
+                            <div class="w-60 h-60 relative my-4 group-hover:scale-105 transition-transform duration-500 drop-shadow-[0_20px_25px_rgba(0,0,0,0.6)]">
+                                <svg viewBox="0 0 400 400" class="w-full h-full">
+                                    <defs>
+                                        <linearGradient id="heroShieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#0284c7"/>
+                                            <stop offset="100%" stop-color="#075985"/>
+                                        </linearGradient>
+                                        <linearGradient id="heroGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#fef08a"/>
+                                            <stop offset="50%" stop-color="#facc15"/>
+                                            <stop offset="100%" stop-color="#eab308"/>
+                                        </linearGradient>
+                                    </defs>
+
+                                    <!-- Outer Dark Ring Frame -->
+                                    <circle cx="200" cy="200" r="192" fill="#0f172a" stroke="#ffffff" stroke-width="4"/>
+                                    <circle cx="200" cy="200" r="148" fill="#ffffff" stroke="#38bdf8" stroke-width="2.5"/>
+                                    
+                                    <!-- Circular Text Path Top -->
+                                    <path id="heroTextPathTop" d="M 48,200 A 152,152 0 1,1 352,200" fill="none"/>
+                                    <text font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="20" fill="#38bdf8" letter-spacing="2.5">
+                                        <textPath href="#heroTextPathTop" startOffset="50%" text-anchor="middle">
+                                            IKATAN YAYASAN AL-MUKHLISHIN SIBUHUAN
+                                        </textPath>
+                                    </text>
+                                    
+                                    <!-- Circular Text Path Bottom -->
+                                    <path id="heroTextPathBottom" d="M 352,200 A 152,152 0 0,1 48,200" fill="none"/>
+                                    <text font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="20.5" fill="#38bdf8" letter-spacing="2.8">
+                                        <textPath href="#heroTextPathBottom" startOffset="50%" text-anchor="middle">
+                                            IKAYAMIN-YOGYAKARTA
+                                        </textPath>
+                                    </text>
+                                    
+                                    <!-- Inner Shield Container -->
+                                    <g transform="translate(0, 0)">
+                                        <!-- Blue Shield Background -->
+                                        <path d="M 115,108 C 115,108 200,80 285,108 L 285,225 C 285,295 200,328 200,328 C 200,328 115,295 115,225 Z" fill="url(#heroShieldGrad)" stroke="#facc15" stroke-width="4"/>
+                                        
+                                        <!-- Top Star -->
+                                        <polygon points="200,90 203.5,100 214,100 205.5,106 208.5,116 200,110 191.5,116 194.5,106 186,100 196.5,100" fill="url(#heroGoldGrad)" stroke="#000000" stroke-width="0.8"/>
+                                        
+                                        <!-- Open Quran Book -->
+                                        <g transform="translate(172, 118)">
+                                            <path d="M 28,3 Q 14,8 0,14 L 0,28 Q 14,22 28,17 Z" fill="#ffffff" stroke="#0f172a" stroke-width="2.2"/>
+                                            <path d="M 28,3 Q 42,8 56,14 L 56,28 Q 42,22 28,17 Z" fill="#ffffff" stroke="#0f172a" stroke-width="2.2"/>
+                                            <line x1="28" y1="3" x2="28" y2="17" stroke="#0f172a" stroke-width="2.2"/>
+                                        </g>
+                                        
+                                        <!-- Center Yellow Monogram Circle -->
+                                        <circle cx="200" cy="188" r="31" fill="url(#heroGoldGrad)" stroke="#0f172a" stroke-width="3"/>
+                                        <text x="200" y="195" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="18" fill="#0f172a" text-anchor="middle">YAM</text>
+                                        
+                                        <!-- 10 Golden Stars surrounding circle -->
+                                        <g fill="url(#heroGoldGrad)" stroke="#000000" stroke-width="0.6">
+                                            <polygon points="152,188 154,182 160,182 155,186 157,192 152,188 147,192 149,186 144,182 150,182" transform="scale(0.7) translate(65, 80)"/>
+                                            <polygon points="158,165 160,159 166,159 161,163 163,169 158,165 153,169 155,163 150,159 156,159" transform="scale(0.7) translate(80, 50)"/>
+                                            <polygon points="180,150 182,144 188,144 183,148 185,154 180,150 175,154 177,148 172,144 178,144" transform="scale(0.7) translate(110, 30)"/>
+                                            <polygon points="220,150 222,144 228,144 223,148 225,154 220,150 215,154 217,148 212,144 218,144" transform="scale(0.7) translate(170, 30)"/>
+                                            <polygon points="242,165 244,159 250,159 245,163 247,169 242,165 237,169 239,163 234,159 240,159" transform="scale(0.7) translate(200, 50)"/>
+                                            <polygon points="248,190 250,184 256,184 251,188 253,194 248,190 243,194 245,188 240,184 246,184" transform="scale(0.7) translate(210, 85)"/>
+                                            <polygon points="240,215 242,209 248,209 243,213 245,219 240,215 235,219 237,213 232,209 238,209" transform="scale(0.7) translate(200, 120)"/>
+                                            <polygon points="220,230 222,224 228,224 223,228 225,234 220,230 215,234 217,228 212,224 218,224" transform="scale(0.7) translate(170, 140)"/>
+                                            <polygon points="180,230 182,224 188,224 183,228 185,234 180,230 175,234 177,228 172,224 178,224" transform="scale(0.7) translate(110, 140)"/>
+                                            <polygon points="160,215 162,209 168,209 163,213 165,219 160,215 155,219 157,213 152,209 158,209" transform="scale(0.7) translate(80, 120)"/>
+                                        </g>
+
+                                        <!-- Left Cotton Bolls (White) -->
+                                        <g fill="#ffffff" stroke="#0f172a" stroke-width="1.8">
+                                            <circle cx="145" cy="142" r="7.5"/><circle cx="136" cy="168" r="7.5"/><circle cx="136" cy="195" r="7.5"/><circle cx="145" cy="222" r="7.5"/>
+                                        </g>
+
+                                        <!-- Right Rice Ears (Golden) -->
+                                        <g fill="url(#heroGoldGrad)" stroke="#0f172a" stroke-width="1.5">
+                                            <ellipse cx="255" cy="142" rx="4.5" ry="8.5" transform="rotate(25 255 142)"/>
+                                            <ellipse cx="264" cy="168" rx="4.5" ry="8.5" transform="rotate(20 264 168)"/>
+                                            <ellipse cx="264" cy="195" rx="4.5" ry="8.5" transform="rotate(15 264 195)"/>
+                                            <ellipse cx="255" cy="222" rx="4.5" ry="8.5" transform="rotate(10 255 222)"/>
+                                        </g>
+                                        
+                                        <!-- Ribbons Bottom -->
+                                        <!-- Upper Red Ribbon -->
+                                        <path d="M 122,238 L 278,238 L 268,264 L 132,264 Z" fill="#dc2626" stroke="#000000" stroke-width="2.5"/>
+                                        <text x="200" y="256" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">YAYASAN</text>
+
+                                        <!-- Lower White Ribbon -->
+                                        <path d="M 136,262 L 264,262 L 254,284 L 146,284 Z" fill="#ffffff" stroke="#000000" stroke-width="2.2"/>
+                                        <text x="200" y="278" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="10.5" fill="#dc2626" text-anchor="middle">AL-MUKHLISHIN</text>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="mt-4 p-4 rounded-2xl glass-card text-slate-900 shadow-xl w-full text-left">
+                                <div class="flex items-start gap-3">
+                                    <div class="p-2.5 bg-sky-700 text-amber-300 rounded-xl shrink-0">
+                                        <i class="fa-solid fa-location-dot text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-slate-900 text-xs">Titik Pendirian Historis</p>
+                                        <p class="text-[11px] text-slate-600 mt-0.5">16 September 2023 • Kafe Bento Sorowajan, Banguntapan, Bantul</p>
+                                        <span class="inline-block mt-1.5 px-2 py-0.5 rounded bg-sky-100 text-sky-800 text-[10px] font-extrabold tracking-wider">RESMI DI YOGYAKARTA</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative z-20 -mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-white p-6 rounded-2xl shadow-xl border border-sky-100">
+            <div class="p-4 text-center border-r border-slate-100 last:border-0">
+                <p class="text-xs uppercase font-bold text-slate-400 tracking-wider">Tanggal Berdiri</p>
+                <p class="text-2xl sm:text-3xl font-black text-sky-700 mt-1">16 Sept 2023</p>
+                <p class="text-xs text-slate-500 font-medium">Bantul, D.I. Yogyakarta</p>
+            </div>
+            <div class="p-4 text-center lg:border-r border-slate-100">
+                <p class="text-xs uppercase font-bold text-slate-400 tracking-wider">Almamater Induk</p>
+                <p class="text-xl sm:text-2xl font-black text-sky-700 mt-1">Ponpes Al-Mukhlishin</p>
+                <p class="text-xs text-slate-500 font-medium">Sibuhuan, Padang Lawas</p>
+            </div>
+            <div class="p-4 text-center border-r border-slate-100">
+                <p class="text-xs uppercase font-bold text-slate-400 tracking-wider">Semangat Utama</p>
+                <p class="text-2xl sm:text-3xl font-black text-amber-600 mt-1">Marsitoguan</p>
+                <p class="text-xs text-slate-500 font-medium">Saling Menopang & Menguatkan</p>
+            </div>
+            <div class="p-4 text-center">
+                <p class="text-xs uppercase font-bold text-slate-400 tracking-wider">Wilayah Aksi</p>
+                <p class="text-2xl sm:text-3xl font-black text-sky-700 mt-1">DIY & Sekitar</p>
+                <p class="text-xs text-slate-500 font-medium">Sleman, Bantul, Jogja Kota</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sejarah" class="py-20 lg:py-28 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- History Text Narrative -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="text-sky-700 text-xs font-bold tracking-widest uppercase bg-sky-100/80 px-4 py-1.5 rounded-full border border-sky-200">Kilas Balik Pendirian</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 tracking-tight leading-snug">
+                            Setiap Perjalanan Besar Selalu Memiliki Titik Awal
+                        </h2>
+                    </div>
+
+                    <div class="prose text-slate-600 leading-relaxed space-y-4 text-base">
+                        <p class="bg-white p-5 rounded-2xl border-l-4 border-sky-600 shadow-sm text-slate-700 italic">
+                            "Pada <strong class="text-slate-900">16 September 2023</strong>, ketika malam telah larut dan jarum jam menunjukkan pukul 21.00 WIB, sebuah pertemuan sederhana berlangsung di Kafe Bento Sorowajan, Jl. Flamboyan, Jomblangan, Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta."
+                        </p>
+                        
+                        <p>
+                            Tidak ada panggung besar, tidak ada seremoni yang megah. Hanya ada sekumpulan alumni yang dipertemukan kembali oleh satu hal yang sama: <strong>rasa memiliki terhadap almamater Pondok Pesantren Al-Mukhlishin Sibuhuan</strong> dan keinginan untuk terus menjaga persaudaraan di tanah rantau.
+                        </p>
+
+                        <p>
+                            Dari pertemuan itulah sebuah gagasan menemukan bentuknya. Para alumni menyadari bahwa perjalanan setelah meninggalkan almamater tidak seharusnya menjadi akhir dari sebuah kebersamaan. Justru setelah menyelesaikan masa pendidikan lahirlah ruang baru untuk saling menguatkan, berbagi pengalaman, membuka peluang kolaborasi, dan memberikan kontribusi yang lebih luas.
+                        </p>
+                    </div>
+
+                    <div class="pt-2">
+                        <div class="p-5 rounded-2xl bg-sky-900 text-white flex items-center gap-4 shadow-lg">
+                            <div class="p-3 bg-amber-400 text-sky-950 rounded-xl text-xl font-bold shrink-0">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p class="text-sm leading-relaxed text-sky-100">
+                                <strong class="text-amber-300">IKAYAMIN JOGJA</strong> hadir sebagai wadah yang mempertemukan kembali keluarga besar alumni Yayasan Al-Mukhlishin Sibuhuan dalam satu ikatan persaudaraan dan rasa yang begitu amat dekat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-sky-100 space-y-6">
+                        <h3 class="text-xl font-bold text-slate-900 pb-3 border-b border-slate-100 flex items-center gap-2">
+                            <i class="fa-solid fa-compass text-sky-600"></i> Informasi Historis Pendirian
+                        </h3>
+
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-start gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-sky-50 text-sky-700 flex items-center justify-center shrink-0 font-bold">
+                                    <i class="fa-solid fa-calendar-day"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold text-slate-400 uppercase">Waktu Deklarasi</p>
+                                    <p class="font-bold text-slate-800">Sabtu, 16 September 2023 (21.00 WIB)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-sky-50 text-sky-700 flex items-center justify-center shrink-0 font-bold">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold text-slate-400 uppercase">Tempat Pertemuan</p>
+                                    <p class="font-bold text-slate-800">Kafe Bento Sorowajan</p>
+                                    <p class="text-xs text-slate-500 mt-0.5">Jl. Flamboyan, Jomblangan, Banguntapan, Bantul, D.I. Yogyakarta 55198</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-sky-50 text-sky-700 flex items-center justify-center shrink-0 font-bold">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold text-slate-400 uppercase">Almamater Induk</p>
+                                    <p class="font-bold text-slate-800">Yayasan Ponpes Al-Mukhlishin Sibuhuan</p>
+                                    <p class="text-xs text-slate-500">Kabupaten Padang Lawas, Sumatera Utara</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <button onclick="openJoinModal()" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-handshake"></i> Bergabung dengan IKAYAMIN Jogja
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="filosofi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-sky-700 text-xs font-bold tracking-widest uppercase bg-sky-50 px-4 py-1.5 rounded-full border border-sky-200">Visi & Nilai Dasar</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 tracking-tight">
+                    Makna & Nilai IKAYAMIN JOGJA
+                </h2>
+                <p class="text-slate-600 mt-3 text-base">
+                    IKAYAMIN Jogja adalah tentang orang-orang yang pernah tumbuh dari tempat yang sama, membawa kenangan yang sama, dan memilih untuk tetap berjalan bersama.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-stretch mb-12">
+                <!-- Visi Utama -->
+                <div class="bg-gradient-to-br from-sky-900 to-sky-800 text-white p-8 sm:p-10 rounded-3xl shadow-lg relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute -right-10 -bottom-10 opacity-10 text-white text-9xl">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 bg-amber-400 text-slate-950 rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 shadow-md">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-white mb-4">Visi Utama</h3>
+                        <p class="text-sky-100 leading-relaxed text-base">
+                            "Menjadi ikatan alumni yang kokoh, inklusif, dan berasas kekeluargaan Islam untuk mempererat silaturahmi, menjaga nilai-nilai kealmamateran, serta saling menopang (Marsitoguan) dalam menghadapi tantangan di tanah rantau Yogyakarta."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-sky-700/60 text-xs text-amber-300 font-semibold">
+                        • Membawa Nilai Al-Mukhlishin di Manapun Berada
+                    </div>
+                </div>
+
+                <!-- Misi & Landasan Gerak -->
+                <div class="bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-sky-600 text-white rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 shadow-md shadow-sky-600/20">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-900 mb-4">Misi & Landasan Gerak</h3>
+                        
+                        <ul class="space-y-3.5 text-slate-700 text-sm">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-sky-600 mt-1"></i>
+                                <span><strong>Menjaga Silaturahmi:</strong> Membangun komunikasi yang erat antaralumni lintas angkatan di D.I. Yogyakarta.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-sky-600 mt-1"></i>
+                                <span><strong>Merawat Persaudaraan:</strong> Menciptakan ruang aman dan hangat bagi seluruh santri alumni yang sedang berkuliah/bekerja.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-sky-600 mt-1"></i>
+                                <span><strong>Menguatkan Almamater:</strong> Menjaga nama baik dan memberikan wawasan/kontribusi bagi Ponpes Al-Mukhlishin Sibuhuan.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-sky-600 mt-1"></i>
+                                <span><strong>Saling Marsitoguan:</strong> Saling menopang, membantu kesulitan, dan berbagi peluang berkembang bersama.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Falsafah Marsitoguan Highlight -->
+            <div class="bg-amber-50 rounded-3xl p-8 border border-amber-200/80">
+                <div class="grid md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-3 text-center md:text-left">
+                        <span class="inline-block px-3 py-1 bg-amber-200 text-amber-900 rounded-lg text-xs font-bold uppercase tracking-wider mb-2">Nilai Khas</span>
+                        <h4 class="text-3xl font-black text-amber-900">MARSITOGUAN</h4>
+                        <p class="text-xs text-amber-800 font-medium">Tradisi Saling Menguatkan</p>
+                    </div>
+                    <div class="md:col-span-9 border-t md:border-t-0 md:border-l border-amber-200 pt-4 md:pt-0 md:pl-6 text-slate-700 text-sm leading-relaxed">
+                        Di dalam perbedaan perjalanan hidup, profesi, usia, dan latar belakang pendidikan, alumni IKAYAMIN disatukan oleh satu identitas: <em>Pernah menjadi bagian dari Yayasan Pondok Pesantren Al-Mukhlishin Sibuhuan</em>. Semangat <strong>Marsitoguan</strong> memandu alumni untuk saling merangkul, membimbing junior, dan bahu-membahu di tanah rantau Yogyakarta.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kegiatan" class="py-20 bg-slate-100/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-sky-700 text-xs font-bold tracking-widest uppercase bg-white px-4 py-1.5 rounded-full border border-slate-200">Agenda Rutin & Program</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 tracking-tight">Kegiatan IKAYAMIN JOGJA</h2>
+                <p class="text-slate-600 mt-3 text-base">Rangkaian program untuk memupuk spiritualitas, mempererat persaudaraan, serta menjaga kesinambungan organisasi.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button onclick="filterActivities('all')" class="act-btn active px-5 py-2 rounded-xl text-xs font-bold bg-sky-700 text-white shadow-sm transition-all">Semua Agenda</button>
+                <button onclick="filterActivities('keagamaan')" class="act-btn px-5 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-sky-50 shadow-sm transition-all">Keagamaan & Kajian</button>
+                <button onclick="filterActivities('keakraban')" class="act-btn px-5 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-sky-50 shadow-sm transition-all">Keakraban & Silaturahmi</button>
+                <button onclick="filterActivities('organisasi')" class="act-btn px-5 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 hover:bg-sky-50 shadow-sm transition-all">Permusyawaratan</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="activityGrid">
+                
+                <!-- Activity 1: Kajian Bulanan -->
+                <div class="activity-card keagamaan bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-slate-900 group">
+                        <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?auto=format&fit=crop&w=800&q=80" 
+                             alt="Kajian Bulanan Alumni" 
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0284c7/ffffff?text=Kajian+Bulanan+Alumni';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-sky-700/90 backdrop-blur-md text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider border border-sky-400/30">
+                            <i class="fa-solid fa-book-quran mr-1"></i> Keagamaan
+                        </span>
+                        <span class="absolute bottom-3 left-4 text-white text-xs font-semibold flex items-center gap-1.5 drop-shadow">
+                            <i class="fa-solid fa-mosque text-amber-400"></i> Masjid / Sekretariat Jogja
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Kajian Bulanan Alumni</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">Majelis ilmu rutin memperdalam pemahaman keislaman, pembacaan kitab, dan ruang silaturahmi spiritual alumni di Yogyakarta.</p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span><i class="fa-regular fa-clock text-sky-600 mr-1"></i> Rutin Tiap Bulan</span>
+                            <button onclick="openDetailModal('Kajian Bulanan Alumni', 'Kajian rutin bulanan IKAYAMIN Jogja diadakan sebagai sarana recharge keimanan, diskusi keislaman, dan doa bersama untuk almamater Ponpes Al-Mukhlishin Sibuhuan.')" class="text-sky-700 font-bold hover:underline">Detail <i class="fa-solid fa-arrow-right text-xs"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 2: Makrab Alumni -->
+                <div class="activity-card keakraban bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-slate-900 group">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" 
+                             alt="Makrab Alumni" 
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/d97706/ffffff?text=Makrab+Alumni+IKAYAMIN';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-amber-500/90 backdrop-blur-md text-slate-950 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider border border-amber-300/40">
+                            <i class="fa-solid fa-users mr-1"></i> Keakraban
+                        </span>
+                        <span class="absolute bottom-3 left-4 text-white text-xs font-semibold flex items-center gap-1.5 drop-shadow">
+                            <i class="fa-solid fa-campground text-amber-400"></i> Outdoor / Wisata Jogja
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Makrab (Masa Keakraban)</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">Momen penyambutan alumni baru di Jogja, mempererat rasa kekeluargaan, sharing pengalaman, dan malam keakraban alumni.</p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span><i class="fa-regular fa-calendar text-sky-600 mr-1"></i> Agenda Tahunan</span>
+                            <button onclick="openDetailModal('Masa Keakraban (Makrab)', 'Makrab dirancang untuk menyambut alumni dan santri baru yang melanjutkan studi/karir di D.I. Yogyakarta agar langsung merasa memiliki keluarga di tanah rantau.')" class="text-sky-700 font-bold hover:underline">Detail <i class="fa-solid fa-arrow-right text-xs"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 3: Agenda Ramadhan & Halal bi Halal -->
+                <div class="activity-card keagamaan keakraban bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-slate-900 group">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" 
+                             alt="Agenda Ramadhan & Buka Bersama" 
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0369a1/ffffff?text=Buka+Puasa+%26+Halal+bi+Halal';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-sky-700/90 backdrop-blur-md text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider border border-sky-400/30">
+                            <i class="fa-solid fa-utensils mr-1"></i> Ramadhan & Fitri
+                        </span>
+                        <span class="absolute bottom-3 left-4 text-white text-xs font-semibold flex items-center gap-1.5 drop-shadow">
+                            <i class="fa-solid fa-handshake-angle text-amber-400"></i> Bukber & Silaturahmi
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Agenda Ramadhan & Halal bi Halal</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">Buka puasa bersama alumni, bakti sosial Ramadhan, serta ajang Halal bi Halal mempererat tali silaturahmi pasca-Idul Fitri.</p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span><i class="fa-solid fa-moon text-sky-600 mr-1"></i> Musim Ramadhan/Syawal</span>
+                            <button onclick="openDetailModal('Agenda Ramadhan & Halal bi Halal', 'Rangkaian kegiatan meliputi buka bersama, pembagian santunan/takjil, serta Halal bi Halal alumni untuk saling maaf-memaafkan.')" class="text-sky-700 font-bold hover:underline">Detail <i class="fa-solid fa-arrow-right text-xs"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 4: Perayaan Hari Besar Islam (PHBI) -->
+                <div class="activity-card keagamaan bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-slate-900 group">
+                        <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&w=800&q=80" 
+                             alt="PHBI IKAYAMIN" 
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0369a1/ffffff?text=PHBI+IKAYAMIN+Jogja';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-sky-700/90 backdrop-blur-md text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider border border-sky-400/30">
+                            <i class="fa-solid fa-star-and-crescent mr-1"></i> PHBI
+                        </span>
+                        <span class="absolute bottom-3 left-4 text-white text-xs font-semibold flex items-center gap-1.5 drop-shadow">
+                            <i class="fa-solid fa-kaaba text-amber-400"></i> Peringatan Hari Besar
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Perayaan Hari Besar Islam (PHBI)</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">Peringatan Maulid Nabi, Isra Mi'raj, dan Tahun Baru Hijriah dengan khataman Al-Qur'an dan doa bersama.</p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span><i class="fa-solid fa-calendar-days text-sky-600 mr-1"></i> Kalender Hijriah</span>
+                            <button onclick="openDetailModal('Perayaan Hari Besar Islam', 'Menyemarakkan hari-hari besar Islam di rantau Jogja sebagai wujud merawat karakter santri yang religius dan toleran.')" class="text-sky-700 font-bold hover:underline">Detail <i class="fa-solid fa-arrow-right text-xs"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 5: Musyawarah Pergantian Pengurus -->
+                <div class="activity-card organisasi bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-slate-900 group">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Musyawarah Pengurus" 
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0284c7/ffffff?text=Musyawarah+Pengurus';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-amber-500/90 backdrop-blur-md text-slate-950 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider border border-amber-300/40">
+                            <i class="fa-solid fa-users-gear mr-1"></i> Organisasi
+                        </span>
+                        <span class="absolute bottom-3 left-4 text-white text-xs font-semibold flex items-center gap-1.5 drop-shadow">
+                            <i class="fa-solid fa-comments text-amber-400"></i> Forum Musyawarah
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Musyawarah Pergantian Pengurus</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">Forum tertinggi organisasi untuk evaluasi LPJ, perancangan arah gerak, dan regenerasi kepemimpinan IKAYAMIN Jogja.</p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span><i class="fa-solid fa-sitemap text-sky-600 mr-1"></i> Periodik Organisasi</span>
+                            <button onclick="openDetailModal('Musyawarah Pergantian Pengurus', 'Musyawarah periodik regenerasi kepemimpinan untuk menjamin keberlanjutan estafet perjuangan alumni IKAYAMIN di Yogyakarta.')" class="text-sky-700 font-bold hover:underline">Detail <i class="fa-solid fa-arrow-right text-xs"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 6: Healing & Tadabbur Alam -->
+                <div class="activity-card keakraban bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-slate-900 group">
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80" 
+                             alt="Tadabbur Alam Jogja" 
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/15803d/ffffff?text=Tadabbur+Alam+Jogja';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-sky-700/90 backdrop-blur-md text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider border border-sky-400/30">
+                            <i class="fa-solid fa-tree mr-1"></i> Outdoor
+                        </span>
+                        <span class="absolute bottom-3 left-4 text-white text-xs font-semibold flex items-center gap-1.5 drop-shadow">
+                            <i class="fa-solid fa-mountain-sun text-amber-400"></i> Wisata Alam DIY
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Healing & Tadabbur Alam</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">Rihlah dan refreshing menikmati keindahan alam Yogyakarta (pantai, gunung, kebudayaan) sembari merenungi keagungan ciptaan Allah.</p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span><i class="fa-solid fa-compass text-sky-600 mr-1"></i> Kondisional</span>
+                            <button onclick="openDetailModal('Healing & Tadabbur Alam', 'Kegiatan santai mengunjungi destinasi alam wisata Jogja untuk melepaskan penat penulisan skripsi/kuliah/kerja sembari mempererat silaturahmi.')" class="text-sky-700 font-bold hover:underline">Detail <i class="fa-solid fa-arrow-right text-xs"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 7: Sapa Maba & Orientasi Rantau -->
+                <div class="activity-card keakraban bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-52 overflow-hidden bg-slate-900 group">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" 
+                             alt="Sapa Maba IKAYAMIN Jogja" 
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0ea5e9/ffffff?text=Sapa+Maba+IKAYAMIN';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-amber-500/90 backdrop-blur-md text-slate-950 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider border border-amber-300/40">
+                            <i class="fa-solid fa-graduation-cap mr-1"></i> Sapa Maba
+                        </span>
+                        <span class="absolute bottom-3 left-4 text-white text-xs font-semibold flex items-center gap-1.5 drop-shadow">
+                            <i class="fa-solid fa-hand-holding-heart text-amber-400"></i> Kampus & Posko Jogja
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Sapa Maba & Orientasi Rantau</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">Program pendampingan, penjemputan kedatangan, pengayoman, serta orientasi wilayah Yogyakarta bagi santri baru alumni Ponpes Al-Mukhlishin.</p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                            <span><i class="fa-solid fa-user-graduate text-sky-600 mr-1"></i> Penerimaan Maba</span>
+                            <button onclick="openDetailModal('Sapa Maba & Orientasi Rantau', 'Program Sapa Maba diselenggarakan khusus untuk menyambut, mendampingi proses pencarian tempat tinggal/kos, pengenalan rute kampus, serta pengayoman awal bagi adik-adik alumni yang baru menginjakkan kaki di Yogyakarta.')" class="text-sky-700 font-bold hover:underline">Detail <i class="fa-solid fa-arrow-right text-xs"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <!-- Col 1 -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-sky-700 flex items-center justify-center text-amber-400 font-bold">
+                            <i class="fa-solid fa-mosque"></i>
+                        </div>
+                        <span class="text-lg font-black text-white tracking-tight">IKAYAMIN <span class="text-sky-500">JOGJA</span></span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Ikatan Alumni Pondok Pesantren Yayasan Al-Mukhlishin Sibuhuan di Daerah Istimewa Yogyakarta. Berdiri pada 16 September 2023.
+                    </p>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Navigasi Utama</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#beranda" class="hover:text-sky-400 transition-colors">Beranda Utama</a></li>
+                        <li><a href="#sejarah" class="hover:text-sky-400 transition-colors">Sejarah Pendirian</a></li>
+                        <li><a href="#filosofi" class="hover:text-sky-400 transition-colors">Visi & Misi Marsitoguan</a></li>
+                        <li><a href="#kegiatan" class="hover:text-sky-400 transition-colors">Program & Agenda</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Aksi Alumni</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="javascript:void(0)" onclick="openJoinModal()" class="hover:text-sky-400 transition-colors">Pendataan Alumni Baru</a></li>
+                        <li><a href="#kegiatan" class="hover:text-sky-400 transition-colors">Jadwal Kajian Bulanan</a></li>
+                        <li><a href="#pengurus" class="hover:text-sky-400 transition-colors">Pengurus IKAYAMIN Jogja</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Tautan Komunitas</h4>
+                    <p class="text-xs text-slate-400 mb-3">Ponpes Al-Mukhlishin Sibuhuan • Ikayamin Yogyakarta</p>
+                    <div class="flex gap-2">
+                        <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 hover:bg-sky-600 text-white flex items-center justify-center text-sm transition-all"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 hover:bg-sky-600 text-white flex items-center justify-center text-sm transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 hover:bg-sky-600 text-white flex items-center justify-center text-sm transition-all"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 text-center text-[11px] text-slate-500">
+                <p>&copy; 2026 IKAYAMIN JOGJA - Ikatan Alumni Ponpes Al-Mukhlishin Sibuhuan Yogyakarta.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Alumni Registration -->
+    <div id="joinModal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto custom-scrollbar">
+            <button onclick="closeJoinModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600 text-xl"><i class="fa-solid fa-xmark"></i></button>
+            
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-800 flex items-center justify-center text-xl font-bold">
+                    <i class="fa-solid fa-user-pen"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-extrabold text-slate-900">Pendataan Alumni Jogja</h3>
+                    <p class="text-xs text-slate-500">IKAYAMIN JOGJA • Saling Marsitoguan</p>
+                </div>
+            </div>
+
+            <form onsubmit="handleJoinSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nama Lengkap Alumni</label>
+                    <input type="text" required placeholder="Sesuai ijazah / panggilan" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-600 text-xs sm:text-sm">
+                </div>
+                
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Tahun Tamat Ponpes</label>
+                        <input type="number" required placeholder="Contoh: 2022" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-600 text-xs sm:text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nomor WhatsApp</label>
+                        <input type="tel" required placeholder="08xxxxxxxxxx" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-600 text-xs sm:text-sm">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Domisili / Kampus / Instansi di Jogja</label>
+                    <input type="text" required placeholder="Contoh: Kampus UIN Sunan Kalijaga / Sleman" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-600 text-xs sm:text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Alamat Tinggal di Jogja (Kos/Kontrakan)</label>
+                    <input type="text" placeholder="Contoh: Sorowajan, Banguntapan, Bantul" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-600 text-xs sm:text-sm">
+                </div>
+
+                <button type="submit" class="w-full py-3 bg-sky-700 hover:bg-sky-800 text-white font-bold rounded-xl shadow-md transition-all text-sm mt-4">
+                    <i class="fa-solid fa-check-circle mr-1"></i> Simpan Data & Gabung Komunitas
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Detail Activity -->
+    <div id="detailModal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative">
+            <button onclick="closeDetailModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600 text-xl"><i class="fa-solid fa-xmark"></i></button>
+            <div class="w-12 h-12 bg-sky-100 text-sky-800 rounded-2xl flex items-center justify-center text-2xl font-bold mb-4">
+                <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <h3 id="modalTitle" class="text-2xl font-extrabold text-slate-900 mb-3">Judul Agenda</h3>
+            <p id="modalDesc" class="text-slate-600 text-sm leading-relaxed mb-6">Deskripsi kegiatan.</p>
+            <button onclick="closeDetailModal()" class="w-full py-3 bg-sky-700 text-white font-bold rounded-xl text-sm">Tutup Informasi</button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3.5 rounded-2xl shadow-2xl hidden items-center gap-3 border border-slate-700">
+        <i class="fa-solid fa-circle-check text-sky-400 text-lg"></i>
+        <span id="toastMsg" class="text-xs sm:text-sm font-semibold">Pesan berhasil dikirim!</span>
+    </div>
+
+    <script>
+        // Mobile Navigation Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            } else {
+                menuIcon.className = 'fa-solid fa-xmark text-2xl';
+            }
+        });
+
+        // Close Mobile Menu on Click Links
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            });
+        });
+
+        // Activities Filter Logic
+        function filterActivities(category) {
+            const cards = document.querySelectorAll('.activity-card');
+            const btns = document.querySelectorAll('.act-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('bg-sky-700', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-600');
+            });
+            
+            event.target.classList.remove('bg-white', 'text-slate-600');
+            event.target.classList.add('bg-sky-700', 'text-white');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Modal Functions
+        function openJoinModal() {
+            document.getElementById('joinModal').classList.remove('hidden');
+        }
+        function closeJoinModal() {
+            document.getElementById('joinModal').classList.add('hidden');
+        }
+
+        function openDetailModal(title, desc) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDesc').innerText = desc;
+            document.getElementById('detailModal').classList.remove('hidden');
+        }
+        function closeDetailModal() {
+            document.getElementById('detailModal').classList.add('hidden');
+        }
+
+        // Toast Notification System
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = message;
+            toast.classList.remove('hidden');
+            toast.classList.add('flex');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+                toast.classList.remove('flex');
+            }, 3800);
+        }
+
+        // Form Handlers
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            e.target.reset();
+            showToast('Pesan Anda berhasil terkirim ke Pengurus IKAYAMIN Jogja!');
+        }
+
+        function handleJoinSubmit(e) {
+            e.preventDefault();
+            closeJoinModal();
+            e.target.reset();
+            showToast('Data alumni berhasil dicatat! Salam Saling Marsitoguan di Jogja.');
+        }
+    </script>
+</body>
+</html>inde
